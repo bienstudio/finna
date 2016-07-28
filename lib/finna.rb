@@ -18,6 +18,15 @@ Hanami::Model.configure do
       attribute :name,  String
       attribute :email, String
     end
+
+    collection :friendships do
+      entity      Friendship
+      repository  FriendshipRepository
+
+      attribute :id,        Integer
+      attribute :user_id,   Integer
+      attribute :friend_id, Integer
+    end
   end
 end.load!
 
