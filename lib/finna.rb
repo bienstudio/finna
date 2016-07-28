@@ -10,6 +10,14 @@ Hanami::Model.configure do
   schema     'db/schema.sql'
 
   mapping do
+    collection :users do
+      entity      User
+      repository  UserRepository
+
+      attribute :id,    Integer
+      attribute :name,  String
+      attribute :email, String
+    end
   end
 end.load!
 

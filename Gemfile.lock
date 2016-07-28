@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.6)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
     addressable (2.4.0)
     capybara (2.7.1)
       addressable
@@ -40,6 +46,8 @@ GEM
       dry-logic (~> 0.3, >= 0.3.0)
       dry-types (~> 0.8, >= 0.8.1)
     execjs (2.7.0)
+    factory_girl (4.7.0)
+      activesupport (>= 3.0.0)
     haml (4.0.7)
       tilt
     hanami (0.8.0)
@@ -83,8 +91,10 @@ GEM
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    i18n (0.7.0)
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    json (1.8.3)
     log_buddy (0.7.0)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
@@ -93,6 +103,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
+    minitest (5.9.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -126,7 +137,10 @@ GEM
       rack (>= 1.0)
     slop (3.6.0)
     thor (0.19.1)
+    thread_safe (0.3.5)
     tilt (2.0.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
     url_mount (0.2.1)
@@ -140,6 +154,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv (~> 2.0)
+  factory_girl
   haml
   hanami (~> 0.8)
   hanami-model (~> 0.6)
