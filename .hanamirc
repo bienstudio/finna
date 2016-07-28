@@ -1,0 +1,4 @@
+project=finna
+architecture=container
+test=rspec
+template=haml
