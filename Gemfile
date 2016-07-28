@@ -1,22 +1,25 @@
 source 'https://rubygems.org'
 
-gem 'bundler'
-gem 'rake'
 gem 'hanami',       '~> 0.8'
 gem 'hanami-model', '~> 0.6'
+
+gem 'rake'
 
 gem 'pg'
 
 gem 'haml'
 
-group :development do
-  # Code reloading
-  # See: http://hanamirb.org/guides/applications/code-reloading
-  gem 'shotgun'
-end
+gem 'uglifier'
+gem 'sass'
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'pry'
+  gem 'log_buddy'
+end
+
+group :development do
+  gem 'shotgun'
 end
 
 group :test do
@@ -25,5 +28,5 @@ group :test do
 end
 
 group :production do
-  # gem 'puma'
+  gem 'puma'
 end
