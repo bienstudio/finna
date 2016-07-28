@@ -20,6 +20,7 @@ end
 
 group :development do
   gem 'shotgun'
+  gem 'yard'
 end
 
 group :test do
