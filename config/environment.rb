@@ -1,4 +1,8 @@
 require 'bundler/setup'
+
+require 'tilt'
+require 'rabl/template'
+
 require 'hanami/setup'
 require_relative '../lib/finna'
 require_relative '../apps/api/application'

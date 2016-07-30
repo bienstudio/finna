@@ -8,6 +8,8 @@ gem 'rake'
 gem 'pg'
 
 gem 'haml'
+gem 'tilt'
+gem 'rabl'
 
 gem 'uglifier'
 gem 'sass'

@@ -114,6 +114,8 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     puma (3.6.0)
+    rabl (0.11.0)
+      activesupport (>= 2.3.14)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -163,10 +165,12 @@ DEPENDENCIES
   pg
   pry
   puma
+  rabl
   rake
   rspec
   sass
   shotgun
+  tilt
   uglifier
   yard
 

@@ -106,10 +106,6 @@ module Api
       # TEMPLATES
       #
 
-      # The layout to be used by all views
-      #
-      layout :application # It will load Api::Views::ApplicationLayout
-
       # The relative path to templates
       #
       templates 'templates'
@@ -262,6 +258,10 @@ module Api
       view.prepare do
         include Hanami::Helpers
         include Api::Assets::Helpers
+
+        Rabl.register!
+
+        format :rabl
       end
     end
 
